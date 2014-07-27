@@ -10,7 +10,8 @@
 @implementation SignInViewController
 
 - (instancetype)initWithSignInManager:(SignInManager *)signInManager {
-    self = [super init];
+    self = [super
+            init];
     if (self) {
         _signInManager = signInManager;
     }
@@ -22,7 +23,11 @@
 
 - (IBAction)didTapSignInButton:(UIButton *)signInButton {
     if (self.usernameTextField.text.length > 0 && self.passwordTextField.text.length > 0) {
+        self.fillInBothFieldsLabel.alpha = 0.0f;
         [[self signInManager] signInWithUsername:self.usernameTextField.text password:self.passwordTextField.text];
+    }
+    else {
+        self.fillInBothFieldsLabel.alpha = 1.0;
     }
 }
 

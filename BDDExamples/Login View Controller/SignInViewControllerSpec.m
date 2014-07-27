@@ -65,11 +65,18 @@ describe(@"SignInViewController", ^{
                     loginViewController.usernameTextField.text = @"Fixture Username";
                     loginViewController.passwordTextField.text = @"Fixture Password";
 
+                    // Make sure state is different than the one expected
+                    loginViewController.fillInBothFieldsLabel.alpha = 1.0f;
+
                     [loginViewController didTapSignInButton:nil];
                 });
 
                 it(@"should tell the sign in manager to sign in with given username and password", ^{
                     [verify(mockSignInManager) signInWithUsername:@"Fixture Username" password:@"Fixture Password"];
+                });
+
+                it(@"should hide the fill in label", ^{
+                    expect(loginViewController.fillInBothFieldsLabel.alpha).to.equal(0.0f);
                 });
             });
 
@@ -84,6 +91,10 @@ describe(@"SignInViewController", ^{
                 it(@"should tell the sign in manager to sign in with given username and password", ^{
                     [verifyCount(mockSignInManager, never()) signInWithUsername:anything() password:anything()];
                 });
+
+                it(@"should show the fill in label", ^{
+                    expect(loginViewController.fillInBothFieldsLabel.alpha).to.equal(1.0f);
+                });
             });
 
             context(@"when neither login or password are present", ^{
@@ -96,6 +107,10 @@ describe(@"SignInViewController", ^{
 
                 it(@"should tell the sign in manager to sign in with given username and password", ^{
                     [verifyCount(mockSignInManager, never()) signInWithUsername:anything() password:anything()];
+                });
+
+                it(@"should show the fill in label", ^{
+                    expect(loginViewController.fillInBothFieldsLabel.alpha).to.equal(1.0f);
                 });
             });
         });
@@ -116,11 +131,14 @@ describe(@"SignInViewController", ^{
             __block UITextField *usernameTextField;
             __block UITextField *passwordTextField;
             __block UIButton *signInButton;
+            __block UILabel *fillInLabel;
 
             beforeEach(^{
                 signInButton = [view specsFindButtonWithTitle:@"Sign In"];
                 usernameTextField = [view specsFindTextFieldWithPlaceholder:@"Username"];
                 passwordTextField = [view specsFindTextFieldWithPlaceholder:@"Password"];
+
+                fillInLabel = [view specsFindLabelWithText:@"Please fill in both fields!"];
             });
 
             context(@"when login and password are present", ^{
@@ -128,11 +146,17 @@ describe(@"SignInViewController", ^{
                     usernameTextField.text = @"Fixture Username";
                     passwordTextField.text = @"Fixture Password";
 
+                    fillInLabel.alpha = 1.0f;
+
                     [signInButton specsSimulateTap];
                 });
 
                 it(@"should tell the sign in manager to sign in with given username and password", ^{
                     [verify(mockSignInManager) signInWithUsername:@"Fixture Username" password:@"Fixture Password"];
+                });
+
+                it(@"should hide the fill in label", ^{
+                    expect(fillInLabel.alpha).to.equal(0.0f);
                 });
             });
 
@@ -141,11 +165,17 @@ describe(@"SignInViewController", ^{
                     usernameTextField.text = @"Fixture Username";
                     passwordTextField.text = nil;
 
+                    fillInLabel.alpha = 0.0f;
+
                     [signInButton specsSimulateTap];
                 });
 
                 it(@"should tell the sign in manager to sign in with given username and password", ^{
                     [verifyCount(mockSignInManager, never()) signInWithUsername:anything() password:anything()];
+                });
+
+                it(@"should show the fill in label", ^{
+                    expect(fillInLabel.alpha).to.equal(1.0f);
                 });
             });
 
@@ -154,11 +184,17 @@ describe(@"SignInViewController", ^{
                     usernameTextField.text = nil;
                     passwordTextField.text = nil;
 
+                    fillInLabel.alpha = 0.0f;
+
                     [signInButton specsSimulateTap];
                 });
 
                 it(@"should tell the sign in manager to sign in with given username and password", ^{
                     [verifyCount(mockSignInManager, never()) signInWithUsername:anything() password:anything()];
+                });
+
+                it(@"should hide the fill in label", ^{
+                    expect(fillInLabel.alpha).to.equal(1.0f);
                 });
             });
         });

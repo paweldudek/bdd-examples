@@ -22,19 +22,32 @@
     return [allMatches firstObject];
 }
 
-- (UITextField *)specsFindTextFieldWithPlaceholder:(NSString *)title {
-    NSPredicate *buttonPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+- (UITextField *)specsFindTextFieldWithPlaceholder:(NSString *)placeholder {
+    NSPredicate *textFieldPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
         if ([evaluatedObject isKindOfClass:[UITextField class]]) {
-            if ([[evaluatedObject placeholder] isEqualToString:title]) {
+            if ([[evaluatedObject placeholder] isEqualToString:placeholder]) {
                 return YES;
             }
         }
         return NO;
     }];
 
-    NSArray *allMatches = [self traverseChildrenWithPredicate:buttonPredicate];
-    return [allMatches firstObject];}
+    NSArray *allMatches = [self traverseChildrenWithPredicate:textFieldPredicate];
+    return [allMatches firstObject];
+}
 
+- (UILabel *)specsFindLabelWithText:(NSString *)text {
+    NSPredicate *labelPredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+        if ([evaluatedObject isKindOfClass:[UILabel class]]) {
+            if ([[evaluatedObject text] isEqualToString:text]) {
+                return YES;
+            }
+        }
+        return NO;
+    }];
+
+    NSArray *allMatches = [self traverseChildrenWithPredicate:labelPredicate];
+    return [allMatches firstObject];}
 
 #pragma mark -
 

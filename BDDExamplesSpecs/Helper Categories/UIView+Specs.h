@@ -8,6 +8,7 @@
 @interface UIView (Specs)
 
 - (UIButton *)specsFindButtonWithTitle:(NSString *)title;
-- (UITextField *)specsFindTextFieldWithPlaceholder:(NSString *)title;
+- (UITextField *)specsFindTextFieldWithPlaceholder:(NSString *)placeholder;
+- (UILabel *)specsFindLabelWithText:(NSString *)text;
 
 @end
