@@ -161,7 +161,6 @@
 				43078F05197A70550025ECBF /* Supporting Files */,
 				B27A977F0AC5111942C43830 /* Login View Controller */,
 				B27A9D8AFABB8748EA8D699F /* Message Formatter */,
-				B27A9CD378D9C3EAC70A9091 /* Network Layer */,
 				B27A9BAF3819B947894713B2 /* Bar Button Item */,
 				B27A90DB104AE9854B39EF7F /* Helpers */,
 			);
@@ -244,13 +243,6 @@
 				B27A9CB040A154FAC1DE1C58 /* PhotoUploadViewControllerSpec.m */,
 			);
 			path = "Bar Button Item";
-			sourceTree = "<group>";
-		};
-		B27A9CD378D9C3EAC70A9091 /* Network Layer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Network Layer";
 			sourceTree = "<group>";
 		};
 		B27A9D8AFABB8748EA8D699F /* Message Formatter */ = {
