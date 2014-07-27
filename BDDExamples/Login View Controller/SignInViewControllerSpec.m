@@ -2,14 +2,18 @@
 
 #import "SignInViewController.h"
 #import "UIView+Specs.h"
+#import "UIButton+Specs.h"
+#import "SignInManager.h"
 
 SPEC_BEGIN(LoginViewControllerSpec)
 
 describe(@"SignInViewController", ^{
     __block SignInViewController *loginViewController;
+    __block id mockSignInManager;
 
     beforeEach(^{
-        loginViewController = [[SignInViewController alloc] init];
+        mockSignInManager = mock([SignInManager class]);
+        loginViewController = [[SignInViewController alloc] initWithSignInManager:mockSignInManager];
     });
 
     afterEach(^{
@@ -22,6 +26,14 @@ describe(@"SignInViewController", ^{
         beforeEach(^{
             [loginViewController view];
         });
+
+        it(@"should have a placeholder on user name text field", ^{
+            expect(loginViewController.usernameTextField.placeholder).to.equal(@"Username");
+        });
+
+        it(@"should have a placeholder on user name text field", ^{
+             expect(loginViewController.passwordTextField.placeholder).to.equal(@"Password");
+         });
 
         describe(@"sign in button", ^{
 
@@ -46,20 +58,45 @@ describe(@"SignInViewController", ^{
         });
 
         describe(@"tapping the logging button", ^{
-            beforeEach(^{
-                [loginViewController didTapSignInButton:nil];
-            });
 
             context(@"when login and password are present", ^{
 
+                beforeEach(^{
+                    loginViewController.usernameTextField.text = @"Fixture Username";
+                    loginViewController.passwordTextField.text = @"Fixture Password";
+
+                    [loginViewController didTapSignInButton:nil];
+                });
+
+                it(@"should tell the sign in manager to sign in with given username and password", ^{
+                    [verify(mockSignInManager) signInWithUsername:@"Fixture Username" password:@"Fixture Password"];
+                });
             });
 
             context(@"when login or password are not present", ^{
+                beforeEach(^{
+                    loginViewController.usernameTextField.text = @"Fixture Username";
+                    loginViewController.passwordTextField.text = nil;
 
+                    [loginViewController didTapSignInButton:nil];
+                });
+
+                it(@"should tell the sign in manager to sign in with given username and password", ^{
+                    [verifyCount(mockSignInManager, never()) signInWithUsername:anything() password:anything()];
+                });
             });
 
             context(@"when neither login or password are present", ^{
+                beforeEach(^{
+                    loginViewController.usernameTextField.text = nil;
+                    loginViewController.passwordTextField.text = nil;
 
+                    [loginViewController didTapSignInButton:nil];
+                });
+
+                it(@"should tell the sign in manager to sign in with given username and password", ^{
+                    [verifyCount(mockSignInManager, never()) signInWithUsername:anything() password:anything()];
+                });
             });
         });
     });
@@ -75,20 +112,54 @@ describe(@"SignInViewController", ^{
         });
 
         describe(@"login button", ^{
+
+            __block UITextField *usernameTextField;
+            __block UITextField *passwordTextField;
+            __block UIButton *signInButton;
+
             beforeEach(^{
-                [view specsFindButtonWithTitle:@"Sign In"];
+                signInButton = [view specsFindButtonWithTitle:@"Sign In"];
+                usernameTextField = [view specsFindTextFieldWithPlaceholder:@"Username"];
+                passwordTextField = [view specsFindTextFieldWithPlaceholder:@"Password"];
             });
 
             context(@"when login and password are present", ^{
+                beforeEach(^{
+                    usernameTextField.text = @"Fixture Username";
+                    passwordTextField.text = @"Fixture Password";
 
+                    [signInButton specsSimulateTap];
+                });
+
+                it(@"should tell the sign in manager to sign in with given username and password", ^{
+                    [verify(mockSignInManager) signInWithUsername:@"Fixture Username" password:@"Fixture Password"];
+                });
             });
 
             context(@"when login or password are not present", ^{
+                beforeEach(^{
+                    usernameTextField.text = @"Fixture Username";
+                    passwordTextField.text = nil;
 
+                    [signInButton specsSimulateTap];
+                });
+
+                it(@"should tell the sign in manager to sign in with given username and password", ^{
+                    [verifyCount(mockSignInManager, never()) signInWithUsername:anything() password:anything()];
+                });
             });
 
             context(@"when neither login or password are present", ^{
+                beforeEach(^{
+                    usernameTextField.text = nil;
+                    passwordTextField.text = nil;
 
+                    [signInButton specsSimulateTap];
+                });
+
+                it(@"should tell the sign in manager to sign in with given username and password", ^{
+                    [verifyCount(mockSignInManager, never()) signInWithUsername:anything() password:anything()];
+                });
             });
         });
     });

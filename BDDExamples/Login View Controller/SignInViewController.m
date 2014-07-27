@@ -10,7 +10,7 @@
 @implementation SignInViewController
 
 - (instancetype)initWithSignInManager:(SignInManager *)signInManager {
-    self = [super initWithNibName:@"SignInViewController" bundle:nil];
+    self = [super init];
     if (self) {
         _signInManager = signInManager;
     }
@@ -21,7 +21,9 @@
 #pragma mark -
 
 - (IBAction)didTapSignInButton:(UIButton *)signInButton {
-    [[self signInManager] signInWithUsername:self.usernameTextField.text password:self.passwordTextField.text];
+    if (self.usernameTextField.text.length > 0 && self.passwordTextField.text.length > 0) {
+        [[self signInManager] signInWithUsername:self.usernameTextField.text password:self.passwordTextField.text];
+    }
 }
 
 @end

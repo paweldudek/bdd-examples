@@ -29,6 +29,7 @@
 		B27A9E1F2CDC6B024B75B38A /* ProtocolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9224B60BEB7ACAD88ED1 /* ProtocolHelper.m */; };
 		B27A9E355BE9F3119D3524F5 /* UIBarButtonItem+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9AB9151B67572477A4FD /* UIBarButtonItem+Specs.m */; };
 		B27A9EA063D7C9AF6740D559 /* SignInViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A951C1EE7FC22F29D27BF /* SignInViewControllerSpec.m */; };
+		B27A9EF0986D7185FF92CF84 /* UIButton+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9CBC53167B13D02462CB /* UIButton+Specs.m */; };
 		B27A9F024F96B51B4F3D2B81 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9CF75137CD5DDB899B94 /* SignInViewController.m */; };
 		B27A9F7C3AB3501304EBA439 /* PhotoUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9FCBFED434FE6F469A1A /* PhotoUploadViewController.m */; };
 		E02D823543C04124A76F8FCA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 618E4C54CC4E454494014BDA /* libPods.a */; };
@@ -67,6 +68,7 @@
 		AFC00F7B75EC4CE08F6F0A15 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B1CB806DB3604D7DB7BD15EB /* Pods-specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-specs.xcconfig"; path = "Pods/Pods-specs.xcconfig"; sourceTree = "<group>"; };
 		B27A902C852DB50978A4CDB2 /* PhotoUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploader.m; sourceTree = "<group>"; };
+		B27A90886DF2A22F2CCB57D9 /* UIButton+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Specs.h"; sourceTree = "<group>"; };
 		B27A9224B60BEB7ACAD88ED1 /* ProtocolHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolHelper.m; sourceTree = "<group>"; };
 		B27A929F2F43D5A0D91EE499 /* SignInManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInManager.m; sourceTree = "<group>"; };
 		B27A951C1EE7FC22F29D27BF /* SignInViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewControllerSpec.m; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		B27A9C15F24080E70D6F6C16 /* PhotoUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoUploadViewController.h; sourceTree = "<group>"; };
 		B27A9C3B0FE00591D60F8F65 /* ProtocolHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolHelper.h; sourceTree = "<group>"; };
 		B27A9CB040A154FAC1DE1C58 /* PhotoUploadViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploadViewControllerSpec.m; sourceTree = "<group>"; };
+		B27A9CBC53167B13D02462CB /* UIButton+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Specs.m"; sourceTree = "<group>"; };
 		B27A9CF75137CD5DDB899B94 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		B27A9D0D87B5DA047780FA36 /* UIView+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Specs.h"; sourceTree = "<group>"; };
 		B27A9FCBFED434FE6F469A1A /* PhotoUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploadViewController.m; sourceTree = "<group>"; };
@@ -212,6 +215,8 @@
 				B27A9BEDE72AA6483FCC5DCA /* UIBarButtonItem+Specs.h */,
 				B27A9AF9432C2DCD05317D34 /* UIView+Specs.m */,
 				B27A9D0D87B5DA047780FA36 /* UIView+Specs.h */,
+				B27A9CBC53167B13D02462CB /* UIButton+Specs.m */,
+				B27A90886DF2A22F2CCB57D9 /* UIButton+Specs.h */,
 			);
 			path = "Helper Categories";
 			sourceTree = "<group>";
@@ -442,6 +447,7 @@
 				B27A9E355BE9F3119D3524F5 /* UIBarButtonItem+Specs.m in Sources */,
 				B27A9EA063D7C9AF6740D559 /* SignInViewControllerSpec.m in Sources */,
 				B27A92B23BEB762AF0F6DE0B /* UIView+Specs.m in Sources */,
+				B27A9EF0986D7185FF92CF84 /* UIButton+Specs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
