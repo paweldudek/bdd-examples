@@ -159,7 +159,7 @@
 				43078F0E197A70550025ECBF /* AppDelegate.m */,
 				43078F10197A70550025ECBF /* Images.xcassets */,
 				43078F05197A70550025ECBF /* Supporting Files */,
-				B27A977F0AC5111942C43830 /* Login View Controller */,
+				B27A977F0AC5111942C43830 /* Sign In View Conroller */,
 				B27A9D8AFABB8748EA8D699F /* Message Formatter */,
 				B27A9BAF3819B947894713B2 /* Bar Button Item */,
 				B27A90DB104AE9854B39EF7F /* Helpers */,
@@ -220,7 +220,7 @@
 			path = "Helper Categories";
 			sourceTree = "<group>";
 		};
-		B27A977F0AC5111942C43830 /* Login View Controller */ = {
+		B27A977F0AC5111942C43830 /* Sign In View Conroller */ = {
 			isa = PBXGroup;
 			children = (
 				B27A9CF75137CD5DDB899B94 /* SignInViewController.m */,
@@ -230,7 +230,7 @@
 				B27A9843FCBA2756826DB249 /* SignInManager.h */,
 				43C6ABEA1984FE7100191F93 /* SignInViewController.xib */,
 			);
-			path = "Login View Controller";
+			path = "Sign In View Conroller";
 			sourceTree = "<group>";
 		};
 		B27A9BAF3819B947894713B2 /* Bar Button Item */ = {
