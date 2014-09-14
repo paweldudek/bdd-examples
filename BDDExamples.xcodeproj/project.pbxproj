@@ -19,17 +19,26 @@
 		43078F34197A709C0025ECBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43078F02197A70550025ECBF /* UIKit.framework */; };
 		43078F3A197A709C0025ECBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43078F38197A709C0025ECBF /* InfoPlist.strings */; };
 		43C6ABEB1984FE7100191F93 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C6ABEA1984FE7100191F93 /* SignInViewController.xib */; };
+		43FA729019C48AAD0099456A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FA728F19C48AAD0099456A /* CoreData.framework */; };
+		43FA729219C49C340099456A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43FA729119C49C340099456A /* Model.xcdatamodeld */; };
 		A25523B3E4C24980B58F0C61 /* libPods-specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A86EBFB65B044630A6EF6023 /* libPods-specs.a */; };
 		B27A92B23BEB762AF0F6DE0B /* UIView+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9AF9432C2DCD05317D34 /* UIView+Specs.m */; };
+		B27A950CA700EBE4F0066E75 /* FolderCleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9CB21D92344AB08D513D /* FolderCleaner.m */; };
 		B27A95D1009E9A72287A1974 /* EventDescriptionFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9A47CF4ACDA71125C96A /* EventDescriptionFormatterSpec.m */; };
+		B27A95F0DF1BF2B19049DC2C /* File+Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A98EDB3C39E8E5CCC6A8D /* File+Fixtures.m */; };
+		B27A974A332568530C7981E3 /* FolderCleanerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9FAD740C8EEA405A6D69 /* FolderCleanerSpec.m */; };
+		B27A97D1CCC3E3A9EA6C74B7 /* Folder+Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9E5050E59F1F51403BAD /* Folder+Fixtures.m */; };
 		B27A98057C135FBFBAB45EC4 /* EventDescriptionFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A97DB31A0425DEE3FA717 /* EventDescriptionFormatter.m */; };
 		B27A9814B6A68F6430D0770C /* SignInManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A929F2F43D5A0D91EE499 /* SignInManager.m */; };
 		B27A9B656621B62126805C91 /* PhotoUploadViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9CB040A154FAC1DE1C58 /* PhotoUploadViewControllerSpec.m */; };
 		B27A9D2BDF3D3BBEA04825E6 /* PhotoUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A902C852DB50978A4CDB2 /* PhotoUploader.m */; };
 		B27A9E1F2CDC6B024B75B38A /* ProtocolHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9224B60BEB7ACAD88ED1 /* ProtocolHelper.m */; };
 		B27A9E355BE9F3119D3524F5 /* UIBarButtonItem+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9AB9151B67572477A4FD /* UIBarButtonItem+Specs.m */; };
+		B27A9E5175148766DF4545A5 /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9F68792D969BF3E5E211 /* File.m */; };
+		B27A9E51ED1ECF6A9E6ED1EC /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A99756ABC0C13397F6250 /* Folder.m */; };
 		B27A9EA063D7C9AF6740D559 /* SignInViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A951C1EE7FC22F29D27BF /* SignInViewControllerSpec.m */; };
 		B27A9EF0986D7185FF92CF84 /* UIButton+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9CBC53167B13D02462CB /* UIButton+Specs.m */; };
+		B27A9EF1C5ABE71106325EFB /* NSManagedObjectContext+Specs.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A960FD8251C3A07D3F6EB /* NSManagedObjectContext+Specs.m */; };
 		B27A9F024F96B51B4F3D2B81 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9CF75137CD5DDB899B94 /* SignInViewController.m */; };
 		B27A9F7C3AB3501304EBA439 /* PhotoUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9FCBFED434FE6F469A1A /* PhotoUploadViewController.m */; };
 		E02D823543C04124A76F8FCA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 618E4C54CC4E454494014BDA /* libPods.a */; };
@@ -63,6 +72,7 @@
 		43078F39197A709C0025ECBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		43078F3D197A709C0025ECBF /* BDDExamplesSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDDExamplesSpecs-Prefix.pch"; sourceTree = "<group>"; };
 		43C6ABEA1984FE7100191F93 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		43FA728F19C48AAD0099456A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		618E4C54CC4E454494014BDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86EBFB65B044630A6EF6023 /* libPods-specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC00F7B75EC4CE08F6F0A15 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -70,13 +80,20 @@
 		B27A902C852DB50978A4CDB2 /* PhotoUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploader.m; sourceTree = "<group>"; };
 		B27A90886DF2A22F2CCB57D9 /* UIButton+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Specs.h"; sourceTree = "<group>"; };
 		B27A9224B60BEB7ACAD88ED1 /* ProtocolHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolHelper.m; sourceTree = "<group>"; };
+		B27A92965BE0C216EE50251E /* Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = SOURCE_ROOT; };
 		B27A929F2F43D5A0D91EE499 /* SignInManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInManager.m; sourceTree = "<group>"; };
 		B27A951C1EE7FC22F29D27BF /* SignInViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewControllerSpec.m; sourceTree = "<group>"; };
+		B27A960FD8251C3A07D3F6EB /* NSManagedObjectContext+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Specs.m"; sourceTree = "<group>"; };
 		B27A96A03EF5C5A40A44D8FF /* PhotoUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoUploader.h; sourceTree = "<group>"; };
 		B27A97A5C3C94E9058D868B5 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		B27A97D87E7DEC1FB16193F8 /* File+Fixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "File+Fixtures.h"; sourceTree = "<group>"; };
 		B27A97DB31A0425DEE3FA717 /* EventDescriptionFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDescriptionFormatter.m; sourceTree = "<group>"; };
 		B27A9843FCBA2756826DB249 /* SignInManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInManager.h; sourceTree = "<group>"; };
+		B27A9877F5BABC17D60A13E6 /* NSManagedObjectContext+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Specs.h"; sourceTree = "<group>"; };
 		B27A98825F1853A3D661FD06 /* EventDescriptionFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDescriptionFormatter.h; sourceTree = "<group>"; };
+		B27A98EDB3C39E8E5CCC6A8D /* File+Fixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "File+Fixtures.m"; sourceTree = "<group>"; };
+		B27A9912A151C1877B288F89 /* FolderCleaner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderCleaner.h; sourceTree = SOURCE_ROOT; };
+		B27A99756ABC0C13397F6250 /* Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = SOURCE_ROOT; };
 		B27A99A4EDE0E3911F81B05A /* Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Specs.h; sourceTree = "<group>"; };
 		B27A9A47CF4ACDA71125C96A /* EventDescriptionFormatterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDescriptionFormatterSpec.m; sourceTree = "<group>"; };
 		B27A9A813C89D8AFC8756D82 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
@@ -86,9 +103,15 @@
 		B27A9C15F24080E70D6F6C16 /* PhotoUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoUploadViewController.h; sourceTree = "<group>"; };
 		B27A9C3B0FE00591D60F8F65 /* ProtocolHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolHelper.h; sourceTree = "<group>"; };
 		B27A9CB040A154FAC1DE1C58 /* PhotoUploadViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploadViewControllerSpec.m; sourceTree = "<group>"; };
+		B27A9CB21D92344AB08D513D /* FolderCleaner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderCleaner.m; sourceTree = SOURCE_ROOT; };
 		B27A9CBC53167B13D02462CB /* UIButton+Specs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Specs.m"; sourceTree = "<group>"; };
 		B27A9CF75137CD5DDB899B94 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		B27A9D0D87B5DA047780FA36 /* UIView+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Specs.h"; sourceTree = "<group>"; };
+		B27A9E5050E59F1F51403BAD /* Folder+Fixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Folder+Fixtures.m"; sourceTree = "<group>"; };
+		B27A9E5CC38700710C2839C6 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = SOURCE_ROOT; };
+		B27A9E9A514A613DA185BB17 /* Folder+Fixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Folder+Fixtures.h"; sourceTree = "<group>"; };
+		B27A9F68792D969BF3E5E211 /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = SOURCE_ROOT; };
+		B27A9FAD740C8EEA405A6D69 /* FolderCleanerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderCleanerSpec.m; sourceTree = SOURCE_ROOT; };
 		B27A9FCBFED434FE6F469A1A /* PhotoUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FA729019C48AAD0099456A /* CoreData.framework in Frameworks */,
 				43078F01197A70550025ECBF /* CoreGraphics.framework in Frameworks */,
 				43078F03197A70550025ECBF /* UIKit.framework in Frameworks */,
 				43078EFF197A70550025ECBF /* Foundation.framework in Frameworks */,
@@ -142,6 +166,7 @@
 		43078EFD197A70550025ECBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43FA728F19C48AAD0099456A /* CoreData.framework */,
 				43078EFE197A70550025ECBF /* Foundation.framework */,
 				43078F00197A70550025ECBF /* CoreGraphics.framework */,
 				43078F02197A70550025ECBF /* UIKit.framework */,
@@ -163,6 +188,7 @@
 				B27A9D8AFABB8748EA8D699F /* Message Formatter */,
 				B27A9BAF3819B947894713B2 /* Bar Button Item */,
 				B27A90DB104AE9854B39EF7F /* Helpers */,
+				B27A90ACAD3EEEA0778ABD9F /* Cleaning Core Data */,
 			);
 			path = BDDExamples;
 			sourceTree = "<group>";
@@ -198,6 +224,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B27A90ACAD3EEEA0778ABD9F /* Cleaning Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B27A9CB21D92344AB08D513D /* FolderCleaner.m */,
+				B27A9912A151C1877B288F89 /* FolderCleaner.h */,
+				B27A9FAD740C8EEA405A6D69 /* FolderCleanerSpec.m */,
+				43FA729119C49C340099456A /* Model.xcdatamodeld */,
+				B27A94341F21D9822988BA00 /* Model */,
+			);
+			path = "Cleaning Core Data";
+			sourceTree = "<group>";
+		};
 		B27A90DB104AE9854B39EF7F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,8 +254,25 @@
 				B27A9D0D87B5DA047780FA36 /* UIView+Specs.h */,
 				B27A9CBC53167B13D02462CB /* UIButton+Specs.m */,
 				B27A90886DF2A22F2CCB57D9 /* UIButton+Specs.h */,
+				B27A960FD8251C3A07D3F6EB /* NSManagedObjectContext+Specs.m */,
+				B27A9877F5BABC17D60A13E6 /* NSManagedObjectContext+Specs.h */,
+				B27A98EDB3C39E8E5CCC6A8D /* File+Fixtures.m */,
+				B27A97D87E7DEC1FB16193F8 /* File+Fixtures.h */,
+				B27A9E5050E59F1F51403BAD /* Folder+Fixtures.m */,
+				B27A9E9A514A613DA185BB17 /* Folder+Fixtures.h */,
 			);
 			path = "Helper Categories";
+			sourceTree = "<group>";
+		};
+		B27A94341F21D9822988BA00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B27A9F68792D969BF3E5E211 /* File.m */,
+				B27A92965BE0C216EE50251E /* Folder.h */,
+				B27A99756ABC0C13397F6250 /* Folder.m */,
+				B27A9E5CC38700710C2839C6 /* File.h */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		B27A977F0AC5111942C43830 /* Sign In View Conroller */ = {
@@ -305,7 +360,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = dudek;
+				ORGANIZATIONNAME = "Paweł Dudek";
 				TargetAttributes = {
 					43078F30197A709C0025ECBF = {
 						TestTargetID = 43078EFA197A70550025ECBF;
@@ -427,6 +482,10 @@
 				B27A9E1F2CDC6B024B75B38A /* ProtocolHelper.m in Sources */,
 				B27A9F024F96B51B4F3D2B81 /* SignInViewController.m in Sources */,
 				B27A9814B6A68F6430D0770C /* SignInManager.m in Sources */,
+				43FA729219C49C340099456A /* Model.xcdatamodeld in Sources */,
+				B27A950CA700EBE4F0066E75 /* FolderCleaner.m in Sources */,
+				B27A9E5175148766DF4545A5 /* File.m in Sources */,
+				B27A9E51ED1ECF6A9E6ED1EC /* Folder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +499,10 @@
 				B27A9EA063D7C9AF6740D559 /* SignInViewControllerSpec.m in Sources */,
 				B27A92B23BEB762AF0F6DE0B /* UIView+Specs.m in Sources */,
 				B27A9EF0986D7185FF92CF84 /* UIButton+Specs.m in Sources */,
+				B27A974A332568530C7981E3 /* FolderCleanerSpec.m in Sources */,
+				B27A9EF1C5ABE71106325EFB /* NSManagedObjectContext+Specs.m in Sources */,
+				B27A95F0DF1BF2B19049DC2C /* File+Fixtures.m in Sources */,
+				B27A97D1CCC3E3A9EA6C74B7 /* Folder+Fixtures.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +655,7 @@
 				INFOPLIST_FILE = "BDDExamplesSpecs/BDDExamplesSpecs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -611,6 +675,7 @@
 				INFOPLIST_FILE = "BDDExamplesSpecs/BDDExamplesSpecs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -646,6 +711,18 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		43FA729119C49C340099456A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+			);
+			name = Model.xcdatamodeld;
+			path = ../../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 43078EF3197A70550025ECBF /* Project object */;
 }
