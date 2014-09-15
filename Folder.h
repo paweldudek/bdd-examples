@@ -7,4 +7,7 @@
 
 @interface Folder : NSManagedObject
 @property(nonatomic, copy) NSString *name;
+
+@property(nonatomic, strong) NSSet *children;
+
 @end

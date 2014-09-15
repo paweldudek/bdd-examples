@@ -8,7 +8,7 @@
 #import "File.h"
 #import "File+Fixtures.h"
 
-@interface FolderCleaner ()
+@interface FolderCleaner (Specs)
 - (void)managedObjectContextDidSave:(NSNotification *)notification;
 @end
 
@@ -29,6 +29,10 @@ describe(@"FolderCleaner", ^{
     
     afterEach(^{
         folderCleaner = nil;
+    });
+
+    it(@"should have a file manager", ^{
+        expect(folderCleaner.fileManager).to.equal([NSFileManager defaultManager]);
     });
 
     // Less-BDD
@@ -119,6 +123,7 @@ describe(@"FolderCleaner", ^{
             beforeEach(^{
                 file1 = [folder specsAddFileWithName:@"Fixture Name"];
                 file1.localPath = @"fixture/path/1";
+                file1.parent = folder;
 
                 [[folder managedObjectContext] save:nil];
 
