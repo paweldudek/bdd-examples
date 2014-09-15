@@ -46,10 +46,12 @@ describe(@"FolderCleaner", ^{
             mockFileManager = mock([NSFileManager class]);
             folderCleaner.fileManager = mockFileManager;
         });
+
         context(@"when a deleted file comes from a handled folder", ^{
             beforeEach(^{
                 file1 = [folder specsAddFileWithName:@"Fixture Name"];
                 file1.localPath = @"fixture/path/1";
+                file1.parent = folder;
 
                 NSNotification *notification = [[NSNotification alloc] initWithName:NSManagedObjectContextDidSaveNotification
                                                                              object:nil
