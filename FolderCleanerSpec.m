@@ -36,7 +36,7 @@ describe(@"FolderCleaner", ^{
     });
 
     // Less-BDD
-    
+
     describe(@"deleting a file", ^{
 
         __block File *file1;
@@ -46,8 +46,7 @@ describe(@"FolderCleaner", ^{
             mockFileManager = mock([NSFileManager class]);
             folderCleaner.fileManager = mockFileManager;
         });
-
-        context(@"when a deleted file comes from a different folder", ^{
+        context(@"when a deleted file comes from a handled folder", ^{
             beforeEach(^{
                 file1 = [folder specsAddFileWithName:@"Fixture Name"];
                 file1.localPath = @"fixture/path/1";
@@ -63,7 +62,7 @@ describe(@"FolderCleaner", ^{
             });
         });
 
-        context(@"when a deleted file comes from a handled folder", ^{
+        context(@"when a deleted file comes from a different folder", ^{
             beforeEach(^{
                 file1 = [File fixtureFileWithName:@"Another Fixture Name"
                              managedObjectContext:managedObjectContext];
@@ -76,7 +75,7 @@ describe(@"FolderCleaner", ^{
             });
 
             it(@"should not remove any files", ^{
-                [verify(mockFileManager) removeItemAtPath:anything() error:nil];
+                [verifyCount(mockFileManager, never()) removeItemAtPath:anything() error:nil];
             });
         });
     });
@@ -149,7 +148,7 @@ describe(@"FolderCleaner", ^{
             });
 
             it(@"should not remove any files", ^{
-                [verify(mockFileManager) removeItemAtPath:anything() error:nil];
+                [verifyCount(mockFileManager, never()) removeItemAtPath:anything() error:nil];
             });
         });
     });
