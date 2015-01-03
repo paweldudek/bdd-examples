@@ -5,7 +5,7 @@ pod 'MTDates'
 target :specs do
     link_with 'BDDExamplesSpecs'
 
-    pod 'Specta'
+    pod 'Specta', '0.3.0.beta1'
     pod 'OCMockito'
     pod 'Expecta'
 end

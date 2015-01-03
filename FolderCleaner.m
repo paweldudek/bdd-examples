@@ -6,12 +6,16 @@
 #import "File.h"
 #import "Folder.h"
 
+
+
 @implementation FolderCleaner
 
 - (instancetype)initWithFolder:(Folder *)folder {
     self = [super init];
     if (self) {
         _folder = folder;
+        
+        _fileManager = [NSFileManager defaultManager];
 
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(managedObjectContextDidSave:)
                                                      name:NSManagedObjectContextDidSaveNotification

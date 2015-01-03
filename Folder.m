@@ -6,5 +6,6 @@
 
 @implementation Folder
 @dynamic name;
+@dynamic children;
 
 @end

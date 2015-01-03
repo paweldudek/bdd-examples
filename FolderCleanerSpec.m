@@ -8,11 +8,11 @@
 #import "File.h"
 #import "File+Fixtures.h"
 
-@interface FolderCleaner (Specs)
+@interface FolderCleaner ()
 - (void)managedObjectContextDidSave:(NSNotification *)notification;
 @end
 
-SPEC_BEGIN(FolderCleaner)
+SpecBegin(FolderCleaner)
 
 describe(@"FolderCleaner", ^{
     __block FolderCleaner *folderCleaner;
@@ -55,8 +55,9 @@ describe(@"FolderCleaner", ^{
 
                 NSNotification *notification = [[NSNotification alloc] initWithName:NSManagedObjectContextDidSaveNotification
                                                                              object:nil
-                                                        userInfo:@{NSDeletedObjectsKey : [NSSet setWithObject:file1]}];
+                                                                           userInfo:@{NSDeletedObjectsKey : [NSSet setWithObject:file1]}];
                 [folderCleaner managedObjectContextDidSave:notification];
+                
             });
 
             it(@"should remove that file", ^{
@@ -70,10 +71,6 @@ describe(@"FolderCleaner", ^{
                              managedObjectContext:managedObjectContext];
                 file1.localPath = @"fixture/path/2";
 
-                NSNotification *notification = [[NSNotification alloc] initWithName:NSManagedObjectContextDidSaveNotification
-                                                                             object:nil
-                                                                           userInfo:@{NSDeletedObjectsKey : [NSSet setWithObject:file1]}];
-                [folderCleaner managedObjectContextDidSave:notification];
             });
 
             it(@"should not remove any files", ^{
@@ -109,6 +106,11 @@ describe(@"FolderCleaner", ^{
 
     // More-BDD
 
+    sharedExamples(@"stuff that's doing stuff", ^(NSDictionary *data) {
+        it(@"should do stuff", ^{
+
+        });
+    });
 
     describe(@"deleting a file", ^{
 
@@ -118,6 +120,10 @@ describe(@"FolderCleaner", ^{
         beforeEach(^{
             mockFileManager = mock([NSFileManager class]);
             folderCleaner.fileManager = mockFileManager;
+        });
+
+        itShouldBehaveLike(@"stuff that's doing stuff", ^{
+            return @{};
         });
 
         context(@"when a deleted file comes from a different folder", ^{
@@ -132,7 +138,7 @@ describe(@"FolderCleaner", ^{
                 [managedObjectContext save:nil];
             });
 
-            it(@"should remove that file", ^{
+            pending(@"should remove that file", ^{
                 [verify(mockFileManager) removeItemAtPath:@"fixture/path/1" error:nil];
             });
         });
@@ -156,4 +162,4 @@ describe(@"FolderCleaner", ^{
     });
 });
 
-SPEC_END
+SpecEnd

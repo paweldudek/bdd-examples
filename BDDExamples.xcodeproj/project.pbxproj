@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F49B1446E31EDBBAE6581AA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		43078EFB197A70550025ECBF /* BDDExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BDDExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43078EFE197A70550025ECBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43078F00197A70550025ECBF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,9 +75,9 @@
 		43C6ABEA1984FE7100191F93 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		43FA728F19C48AAD0099456A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		618E4C54CC4E454494014BDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A5035851136421E76B10F0 /* Pods-specs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-specs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-specs/Pods-specs.debug.xcconfig"; sourceTree = "<group>"; };
+		8C7C77C0C628AA6D5B5CFA65 /* Pods-specs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-specs.release.xcconfig"; path = "Pods/Target Support Files/Pods-specs/Pods-specs.release.xcconfig"; sourceTree = "<group>"; };
 		A86EBFB65B044630A6EF6023 /* libPods-specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFC00F7B75EC4CE08F6F0A15 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		B1CB806DB3604D7DB7BD15EB /* Pods-specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-specs.xcconfig"; path = "Pods/Pods-specs.xcconfig"; sourceTree = "<group>"; };
 		B27A902C852DB50978A4CDB2 /* PhotoUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploader.m; sourceTree = "<group>"; };
 		B27A90886DF2A22F2CCB57D9 /* UIButton+Specs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Specs.h"; sourceTree = "<group>"; };
 		B27A9224B60BEB7ACAD88ED1 /* ProtocolHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolHelper.m; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		B27A9F68792D969BF3E5E211 /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = SOURCE_ROOT; };
 		B27A9FAD740C8EEA405A6D69 /* FolderCleanerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FolderCleanerSpec.m; sourceTree = SOURCE_ROOT; };
 		B27A9FCBFED434FE6F469A1A /* PhotoUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploadViewController.m; sourceTree = "<group>"; };
+		F8AB5FD25A88CBDBCFE49A28 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +151,7 @@
 				43078F35197A709C0025ECBF /* BDDExamplesSpecs */,
 				43078EFD197A70550025ECBF /* Frameworks */,
 				43078EFC197A70550025ECBF /* Products */,
-				B1CB806DB3604D7DB7BD15EB /* Pods-specs.xcconfig */,
-				AFC00F7B75EC4CE08F6F0A15 /* Pods.xcconfig */,
+				C4F5C494152D83B585879E1C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,8 +228,8 @@
 		B27A90ACAD3EEEA0778ABD9F /* Cleaning Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				B27A9CB21D92344AB08D513D /* FolderCleaner.m */,
 				B27A9912A151C1877B288F89 /* FolderCleaner.h */,
+				B27A9CB21D92344AB08D513D /* FolderCleaner.m */,
 				B27A9FAD740C8EEA405A6D69 /* FolderCleanerSpec.m */,
 				43FA729119C49C340099456A /* Model.xcdatamodeld */,
 				B27A94341F21D9822988BA00 /* Model */,
@@ -239,8 +240,8 @@
 		B27A90DB104AE9854B39EF7F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				B27A9224B60BEB7ACAD88ED1 /* ProtocolHelper.m */,
 				B27A9C3B0FE00591D60F8F65 /* ProtocolHelper.h */,
+				B27A9224B60BEB7ACAD88ED1 /* ProtocolHelper.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -248,18 +249,18 @@
 		B27A941A6ED95981174E4DB1 /* Helper Categories */ = {
 			isa = PBXGroup;
 			children = (
-				B27A9AB9151B67572477A4FD /* UIBarButtonItem+Specs.m */,
 				B27A9BEDE72AA6483FCC5DCA /* UIBarButtonItem+Specs.h */,
-				B27A9AF9432C2DCD05317D34 /* UIView+Specs.m */,
+				B27A9AB9151B67572477A4FD /* UIBarButtonItem+Specs.m */,
 				B27A9D0D87B5DA047780FA36 /* UIView+Specs.h */,
-				B27A9CBC53167B13D02462CB /* UIButton+Specs.m */,
+				B27A9AF9432C2DCD05317D34 /* UIView+Specs.m */,
 				B27A90886DF2A22F2CCB57D9 /* UIButton+Specs.h */,
-				B27A960FD8251C3A07D3F6EB /* NSManagedObjectContext+Specs.m */,
+				B27A9CBC53167B13D02462CB /* UIButton+Specs.m */,
 				B27A9877F5BABC17D60A13E6 /* NSManagedObjectContext+Specs.h */,
-				B27A98EDB3C39E8E5CCC6A8D /* File+Fixtures.m */,
+				B27A960FD8251C3A07D3F6EB /* NSManagedObjectContext+Specs.m */,
 				B27A97D87E7DEC1FB16193F8 /* File+Fixtures.h */,
-				B27A9E5050E59F1F51403BAD /* Folder+Fixtures.m */,
+				B27A98EDB3C39E8E5CCC6A8D /* File+Fixtures.m */,
 				B27A9E9A514A613DA185BB17 /* Folder+Fixtures.h */,
+				B27A9E5050E59F1F51403BAD /* Folder+Fixtures.m */,
 			);
 			path = "Helper Categories";
 			sourceTree = "<group>";
@@ -267,10 +268,10 @@
 		B27A94341F21D9822988BA00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B27A9F68792D969BF3E5E211 /* File.m */,
 				B27A92965BE0C216EE50251E /* Folder.h */,
 				B27A99756ABC0C13397F6250 /* Folder.m */,
 				B27A9E5CC38700710C2839C6 /* File.h */,
+				B27A9F68792D969BF3E5E211 /* File.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -278,11 +279,11 @@
 		B27A977F0AC5111942C43830 /* Sign In View Conroller */ = {
 			isa = PBXGroup;
 			children = (
-				B27A9CF75137CD5DDB899B94 /* SignInViewController.m */,
 				B27A97A5C3C94E9058D868B5 /* SignInViewController.h */,
+				B27A9CF75137CD5DDB899B94 /* SignInViewController.m */,
 				B27A951C1EE7FC22F29D27BF /* SignInViewControllerSpec.m */,
-				B27A929F2F43D5A0D91EE499 /* SignInManager.m */,
 				B27A9843FCBA2756826DB249 /* SignInManager.h */,
+				B27A929F2F43D5A0D91EE499 /* SignInManager.m */,
 				43C6ABEA1984FE7100191F93 /* SignInViewController.xib */,
 			);
 			path = "Sign In View Conroller";
@@ -291,11 +292,11 @@
 		B27A9BAF3819B947894713B2 /* Bar Button Item */ = {
 			isa = PBXGroup;
 			children = (
-				B27A9FCBFED434FE6F469A1A /* PhotoUploadViewController.m */,
 				B27A9C15F24080E70D6F6C16 /* PhotoUploadViewController.h */,
-				B27A902C852DB50978A4CDB2 /* PhotoUploader.m */,
-				B27A96A03EF5C5A40A44D8FF /* PhotoUploader.h */,
+				B27A9FCBFED434FE6F469A1A /* PhotoUploadViewController.m */,
 				B27A9CB040A154FAC1DE1C58 /* PhotoUploadViewControllerSpec.m */,
+				B27A96A03EF5C5A40A44D8FF /* PhotoUploader.h */,
+				B27A902C852DB50978A4CDB2 /* PhotoUploader.m */,
 			);
 			path = "Bar Button Item";
 			sourceTree = "<group>";
@@ -303,12 +304,23 @@
 		B27A9D8AFABB8748EA8D699F /* Message Formatter */ = {
 			isa = PBXGroup;
 			children = (
-				B27A97DB31A0425DEE3FA717 /* EventDescriptionFormatter.m */,
 				B27A98825F1853A3D661FD06 /* EventDescriptionFormatter.h */,
-				B27A9A813C89D8AFC8756D82 /* Event.h */,
+				B27A97DB31A0425DEE3FA717 /* EventDescriptionFormatter.m */,
 				B27A9A47CF4ACDA71125C96A /* EventDescriptionFormatterSpec.m */,
+				B27A9A813C89D8AFC8756D82 /* Event.h */,
 			);
 			path = "Message Formatter";
+			sourceTree = "<group>";
+		};
+		C4F5C494152D83B585879E1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F49B1446E31EDBBAE6581AA /* Pods.debug.xcconfig */,
+				F8AB5FD25A88CBDBCFE49A28 /* Pods.release.xcconfig */,
+				72A5035851136421E76B10F0 /* Pods-specs.debug.xcconfig */,
+				8C7C77C0C628AA6D5B5CFA65 /* Pods-specs.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,7 +431,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-specs-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-specs/Pods-specs-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		74FB24F43A9842A282521716 /* Check Pods Manifest.lock */ = {
@@ -449,7 +461,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7FFA9A83715240B1B06551A1 /* Check Pods Manifest.lock */ = {
@@ -610,13 +622,14 @@
 		};
 		43078F28197A70550025ECBF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFC00F7B75EC4CE08F6F0A15 /* Pods.xcconfig */;
+			baseConfigurationReference = 0F49B1446E31EDBBAE6581AA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BDDExamples/BDDExamples-Prefix.pch";
 				INFOPLIST_FILE = "BDDExamples/BDDExamples-Info.plist";
+				MOMC_NO_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -624,13 +637,14 @@
 		};
 		43078F29197A70550025ECBF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFC00F7B75EC4CE08F6F0A15 /* Pods.xcconfig */;
+			baseConfigurationReference = F8AB5FD25A88CBDBCFE49A28 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BDDExamples/BDDExamples-Prefix.pch";
 				INFOPLIST_FILE = "BDDExamples/BDDExamples-Info.plist";
+				MOMC_NO_WARNINGS = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -638,7 +652,7 @@
 		};
 		43078F41197A709D0025ECBF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1CB806DB3604D7DB7BD15EB /* Pods-specs.xcconfig */;
+			baseConfigurationReference = 72A5035851136421E76B10F0 /* Pods-specs.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BDDExamples.app/BDDExamples";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -662,7 +676,7 @@
 		};
 		43078F42197A709D0025ECBF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1CB806DB3604D7DB7BD15EB /* Pods-specs.xcconfig */;
+			baseConfigurationReference = 8C7C77C0C628AA6D5B5CFA65 /* Pods-specs.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BDDExamples.app/BDDExamples";
 				FRAMEWORK_SEARCH_PATHS = (

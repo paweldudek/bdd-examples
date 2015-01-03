@@ -10,29 +10,29 @@
 	<string>BDDExamples</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>F1C599C3-7913-42F4-BA29-B4681868BE9B</key>
+		<key>A7315DF03DD0444598CA3D39A8C4CF2F3C13A995</key>
 		<string>https://github.com/paweldudek/bdd-examples.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BDDExamples.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>F1C599C3-7913-42F4-BA29-B4681868BE9B</key>
+		<key>A7315DF03DD0444598CA3D39A8C4CF2F3C13A995</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/paweldudek/bdd-examples.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F1C599C3-7913-42F4-BA29-B4681868BE9B</string>
+	<string>A7315DF03DD0444598CA3D39A8C4CF2F3C13A995</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F1C599C3-7913-42F4-BA29-B4681868BE9B</string>
+			<string>A7315DF03DD0444598CA3D39A8C4CF2F3C13A995</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BDDExamples</string>
 		</dict>
