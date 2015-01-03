@@ -36,7 +36,7 @@
     NSArray *deletedObjects = [[notification userInfo][NSDeletedObjectsKey] allObjects];
 
     NSPredicate *filePredicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
-        return [evaluatedObject isKindOfClass:[File class]];
+        return [evaluatedObject isKindOfClass:[File class]] && [[evaluatedObject parent] isEqual:self.folder];
     }];
 
     NSArray *deletedFiles = [deletedObjects filteredArrayUsingPredicate:filePredicate];
