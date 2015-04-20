@@ -5,7 +5,7 @@
 #import "UIButton+Specs.h"
 #import "SignInManager.h"
 
-SpecBegin(LoginViewController)
+SpecBegin(SignInViewController)
 
 describe(@"SignInViewController", ^{
     __block SignInViewController *loginViewController;

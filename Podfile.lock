@@ -1,25 +1,22 @@
 PODS:
-  - Expecta (0.3.1)
+  - Expecta (0.4.1)
   - MTDates (0.13.0)
-  - OCHamcrest (4.0.1)
-  - OCMockito (1.3.0):
+  - OCHamcrest (4.1.1)
+  - OCMockito (1.4.0):
     - OCHamcrest (~> 4.0)
-    - TPWeakProxy (~> 1.0)
-  - Specta (0.3.0.beta1)
-  - TPWeakProxy (1.0.0)
+  - Specta (0.5.0)
 
 DEPENDENCIES:
-  - Expecta
+  - Expecta (= 0.4.1)
   - MTDates
-  - OCMockito
-  - Specta (= 0.3.0.beta1)
+  - OCMockito (= 1.4.0)
+  - Specta (= 0.5.0)
 
 SPEC CHECKSUMS:
-  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  MTDates: 8eb0bfe67c492ba292d0aa3320ad013004e156cb
-  OCHamcrest: b464725bbb48d0f1cd9c6f4ec3cb35fe0c4f2b94
-  OCMockito: eca2670b3ce4a457d316b046a36d6f2b980a4da7
-  Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
-  TPWeakProxy: a23251ba7fbe268c93f809cc072ef834f5063798
+  Expecta: a2f175f4f5f99d062d480787945ea11d8884077e
+  MTDates: 05ba586f0e0525f0926c9ef18aa7a0cd68570b29
+  OCHamcrest: 6f03ffa81d12feab872638490a44ab0a6d3aca10
+  OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
+  Specta: eb90708ed77569bbda089f8ead10bb99b8e9489e
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.3
