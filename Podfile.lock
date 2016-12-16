@@ -1,22 +1,24 @@
 PODS:
-  - Expecta (0.4.1)
+  - Expecta (1.0.5)
   - MTDates (0.13.0)
-  - OCHamcrest (4.1.1)
-  - OCMockito (1.4.0):
-    - OCHamcrest (~> 4.0)
-  - Specta (0.5.0)
+  - OCHamcrest (6.0.0)
+  - OCMockito (4.0.1):
+    - OCHamcrest (~> 6.0)
+  - Specta (1.0.5)
 
 DEPENDENCIES:
-  - Expecta (= 0.4.1)
+  - Expecta
   - MTDates
-  - OCMockito (= 1.4.0)
-  - Specta (= 0.5.0)
+  - OCMockito
+  - Specta
 
 SPEC CHECKSUMS:
-  Expecta: a2f175f4f5f99d062d480787945ea11d8884077e
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   MTDates: 05ba586f0e0525f0926c9ef18aa7a0cd68570b29
-  OCHamcrest: 6f03ffa81d12feab872638490a44ab0a6d3aca10
-  OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
-  Specta: eb90708ed77569bbda089f8ead10bb99b8e9489e
+  OCHamcrest: fc8ab38149b97df8db8029a3f2157c951bf9081d
+  OCMockito: 62ddc6afff6a883f2864d51224b1dfdc0e9a7df7
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
-COCOAPODS: 0.36.3
+PODFILE CHECKSUM: 51e17f5c12cadcb7143e802a5247e32dd2985089
+
+COCOAPODS: 1.0.1

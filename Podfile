@@ -1,11 +1,12 @@
-platform :ios, '7.0'
+platform :ios, '9.0'
 
-pod 'MTDates'
+target :BDDExamples do
 
-target :specs do
-    link_with 'BDDExamplesSpecs'
+  pod 'MTDates'
 
-    pod 'Specta', '0.5.0'
-    pod 'OCMockito', '1.4.0'
-    pod 'Expecta', '0.4.1'
+  target :BDDExamplesSpecs do
+    pod 'Specta'
+    pod 'OCMockito'
+    pod 'Expecta'
+  end
 end
